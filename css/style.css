@@ -1,0 +1,70 @@
+body, html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+    background: #ffbfbf; /* Old browsers */
+    background: -moz-linear-gradient(90deg, #ffbfbf 0%, #ffdddd 50%, #ffeeee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(90deg, #ffbfbf 0%,#ffdddd 50%,#ffeeee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(90deg, #ffbfbf 0%,#ffdddd 50%,#ffeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbfbf', endColorstr='#ffeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    overflow-y: scroll;
+    font-family: "Roboto";
+}
+
+span{
+    font-family: "Roboto Mono";
+    font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+}
+
+h1{
+    font-weight: 700;
+}
+
+td{
+    padding: 0 1em 1em 0;
+}
+
+.highlight{
+    background: lightgreen;
+}
+
+.rojitos{
+    background: red;
+}
+#formulario {
+    margin: 1% 15% 0 30%;
+}
+
+header {
+    margin: 0 15% 0 30%;
+}
+
+body {
+    
+}
+
+.result {
+    margin: 3% 0 0 18%;
+    display: none;
+}
+
+.formi {
+    margin: 3% 0 0 18%;
+}
+
+.bloque{
+    width: 100vh;
+	border-radius: 10px;
+	border: 2px solid RGBA(255,100,100, 0.4);
+	padding: 1em 1em 1em 1em;
+	background-color: RGBA(255,255,255, 0.5);
+	margin-bottom: 1%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}

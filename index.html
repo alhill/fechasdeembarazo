@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css" type="text/css" />	
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script src="jquery-ui.min.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/script.js"></script>
+	<title>FECHAS DE EMBARAZOS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header><h1>FECHAS DE EMBARAZOS</h1></header>
+        </div>
+        <div class="row">
+            <div id="formulario">
+                <form name="f1" id="f1" action="#">
+                    <table>
+                        <tr>
+                            <td>
+                                <select name="opcion">
+                                   <option value="fur">Fecha de última regla</option> 
+                                   <option value="ftf">Fecha de transferencia</option> 
+                                   <option value="fpp">Fecha probable de parto</option> 
+                                </select>
+                            </td>
+                            <td>
+                                <input type="date" name="fecha1" value=""/><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Fecha a calcular:</p>
+                            </td>
+                            <td>
+                                <input type="date" name="fecha2" value="" id="esactual"/>
+                            </td>
+                            <td>
+                                <button type="button" onclick="FechaActual();">Fecha actual</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button type="button" onclick="ConstruirCalendario();">Calcular</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>    
+            </div>
+        </div>
+        
+        <div class="row">
+            <div id="calendario" class="result bloque"></div>
+            <div id="textoprenas" class="result bloque"></div>
+        </div>
+    </div>
+</body>
+
+</html>
